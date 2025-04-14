@@ -18,3 +18,10 @@ ng serve
 > **Challenge 3** ✖️
 >
 > quand le compteur `blue` se fini, le `red` commence
+
+### Notes
+
+When done notify parent<br>
+
+The parent will receive the notification<br>
+And will tell red to start<br>
