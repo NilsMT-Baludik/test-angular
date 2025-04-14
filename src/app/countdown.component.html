@@ -1,0 +1,8 @@
+<main class="countdown" [id]="id">
+    <button 
+        (click)="(countdown.value === 0) ? reset() : start()"
+    >
+        {{ (countdown.value === 0) ? "Réinitialiser" : "Commencer"}}  le décompte
+    </button>
+    <h1 class="count-container">{{countdown.value}}</h1>
+</main>

@@ -1,0 +1,41 @@
+:root {
+    --font-type : 'Arial';
+
+    --blue : #1273ea;
+    --blue-medium : #0e59b4;
+    --blue-dark : #083061;
+    --text-color : #fff;
+
+    --radius : 24px;
+    --border-size : 6px;
+    --padding : 24px;
+    --font-size : 1.1em
+}
+
+:root {
+    font-family: var(--font-type);
+    color: var(--text-color);
+    font-size: var(--font-size);
+}
+
+body {
+    background-color: var(--blue);
+}
+
+button {
+    background-color: transparent;
+    color: var(--text-color);
+
+    border: var(--text-color) var(--border-size) solid;
+    border-radius: var(--radius);
+
+    padding: var(--padding);
+
+    font-size : var(--font-size);
+}
+
+button:hover {
+    background-color: #0005;
+
+    cursor: pointer;
+}

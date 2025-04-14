@@ -1,0 +1,26 @@
+.countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+
+    border: var(--text-color) var(--border-size) solid;
+    border-radius: var(--radius);
+
+    padding: calc(var(--padding)*2);
+}
+
+.count-container {
+    font-size: calc(var(--font-size) * 3);
+}
+
+#blue.countdown {
+    background-color: var(--blue-medium);
+}
+
+
+#red.countdown {
+    background-color: #d32626;
+}
