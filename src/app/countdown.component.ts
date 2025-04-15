@@ -12,10 +12,16 @@ import { Countdown } from './countdown.service'
 export class CoundownComponent {
     @Input() id!: string;
     @Input() initialCount!: number;
+
+    @Output() countdownEnded: EventEmitter<{ id: string, date?: Date }> = new EventEmitter()
+
     countdown!: Countdown;
 
-    start() {
-        this.countdown.start()
+    async start() {
+
+        await this.countdown.start()
+
+        this.countdownEnded.emit({id: this.id, date: this.countdown.startingDate}) //emit
     }
 
     reset() {

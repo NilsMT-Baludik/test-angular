@@ -18,10 +18,8 @@ ng serve
 > **Challenge 3** ✖️
 >
 > quand le compteur `blue` se fini, le `red` commence
-
-### Notes
-
-When done notify parent<br>
-
-The parent will receive the notification<br>
-And will tell red to start<br>
+------
+> **Challenge 4** ✖️
+>
+> quand le compteur `blue` commence, on enregistre le timestamp de départ,<br>
+> quand `red` se fini alors on est redirigé vers une page qui rappelle le timestamp de départ

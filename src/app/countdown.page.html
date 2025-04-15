@@ -1,0 +1,16 @@
+<main class="main">
+  <h1>Salutation, ceci est un décompte</h1>
+  <div class="countdown-container ">
+    <my-countdown 
+      #blue
+      (countdownEnded)="onCountdownOver($event.id,$event.date)" 
+      [id]="'blue'" 
+      [initialCount]="2"
+    />
+    <my-countdown 
+      #red
+      [id]="'red'" 
+      [initialCount]="5"
+    />
+  </div>
+</main>

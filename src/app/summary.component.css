@@ -1,0 +1,20 @@
+.summary {
+    width: 100%;
+    height: calc(100vh - var(--padding)/2);
+	background-image: url('./../assets/homer.jpg');
+    object-fit: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary > h1 {
+    background-color: #000a;
+
+    border: var(--text-color) var(--border-size) solid;
+    border-radius: var(--radius);
+
+    padding: calc(var(--padding)*2);
+}

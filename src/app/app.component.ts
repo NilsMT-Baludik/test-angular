@@ -1,21 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CoundownComponent } from "./countdown.component";
-
-
-function wait(ms: number) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet, CoundownComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `<router-outlet></router-outlet>`,
+  imports: [RouterOutlet]
 })
-
-
-export class AppComponent {
-  title = 'Test-angular'
-}
+export class AppComponent {}
