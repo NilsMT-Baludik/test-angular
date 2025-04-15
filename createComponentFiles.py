@@ -38,5 +38,10 @@ export class {component_name}Component {{
 
 # Input
 if __name__ == "__main__":
+    file_type = input("Is it a page or a component? (page/component): ").strip().lower()
+    if file_type not in ['page', 'component']:
+        print("Invalid input. Please enter 'page' or 'component'.")
+        exit(1)
+
     name = input("Enter the component class name (e.g. MySuperCoolComponent but without the \"Component\") : ")
     create_angular_component(name)

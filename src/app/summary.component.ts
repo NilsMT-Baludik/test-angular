@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
 	selector: 'summary',
@@ -7,15 +7,15 @@ import { ActivatedRoute } from '@angular/router';
 	styleUrl: './summary.component.css'
 })
 export class SummaryComponent {
-	constructor(private route: ActivatedRoute) {}
+	constructor(private location: Location) {}
 
 	date?: Date = undefined
 
 	ngOnInit() {
+		const state = this.location.getState() as { date: string }
 
-		const rawDate = history.state.date;
-		if (rawDate) {
-			this.date = new Date(rawDate);
+		if (state?.date) {
+			this.date = new Date(state?.date);
 		}
 	}
 }
